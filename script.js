@@ -14,11 +14,11 @@ function CreatTheNewsPaper() {
     if (telon)
     { //telo
         div.style.width = screen.width*0.8 + "px";
-        div.style.height = screen.width*0.8*(1653/2340) + "px";
+        div.style.height = screen.width*0.8*(2340/1653) + "px";
     }
     else { //gep
         div.style.width = screen.width*0.4 + "px";
-        div.style.height = screen.width*0.4*(1653/2340) + "px";
+        div.style.height = screen.width*0.4*(2340/1653) + "px";
     }
 
     div.style.backgroundImage = 'url(1.png)'
@@ -51,11 +51,11 @@ function CreatTheNewsPaper() {
     if (telon)
     { //telo
         div.style.width = screen.width*0.8 + "px";
-        div.style.height = screen.width*0.8*(1653/2340) + "px";
+        div.style.height = screen.width*0.8*(2340/1653) + "px";
     }
     else { //gep
         div.style.width = screen.width*0.4 + "px";
-        div.style.height = screen.width*0.4*(1653/2340) + "px";
+        div.style.height = screen.width*0.4*(2340/1653) + "px";
     }
 
     div.style.backgroundImage = 'url(17.png)'
