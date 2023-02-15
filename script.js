@@ -1,3 +1,10 @@
+let telon = false
+if (screen.width < screen.height) {
+    telon = true;
+}
+
+console.log(telon)
+
 function CreatTheNewsPaper() {
 
     //FRONT PAGE
