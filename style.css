@@ -1,0 +1,12 @@
+#ujsag{
+    width: 100vw;
+    margin: auto;
+}
+
+.lapok {
+    margin: auto;
+    background: url(10.png) no-repeat;
+    background-size: 100%;
+    width: 1444px;
+    height: 1024px;
+}
