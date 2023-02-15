@@ -1,8 +1,9 @@
+
+
 let telon = false
 if (screen.width < screen.height) {
     telon = true;
 }
-
 console.log(telon)
 
 function CreatTheNewsPaper() {
@@ -63,3 +64,8 @@ function CreatTheNewsPaper() {
 }
 
 CreatTheNewsPaper()
+
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
