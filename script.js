@@ -32,11 +32,11 @@ function CreatTheNewsPaper() {
         if (telon)
         { //telo
             div.style.width = screen.width + "px";
-            div.style.height = screen.width*(3306/2340) + "px";
+            div.style.height = screen.width*(3306/2340)/2 + "px";
         }
         else { //gep
             div.style.width = screen.width*0.7 + "px";
-            div.style.height = screen.width*0.7*(3306/2340) + "px";
+            div.style.height = screen.width*0.7*(3306/2340)/2 + "px";
         }
 
         var backG = i + ".png"
