@@ -9,9 +9,15 @@
     <link rel="icon" type="image/x-icon" href="icon.jpg">
 
 </head>
-<body>
+<body onresize="SizePages()">
     <div class="loader">
         <img src="icon.jpg" alt="Loading..." />
+    </div>
+    <div id="relative-layer">
+        <div id="overlay"></div>
+        <div id="sideMenu">
+            <button onclick="SideMenuToggle()">Menu quwu</button>
+        </div>
     </div>
 
     <div id="ujsag"></div>

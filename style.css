@@ -1,18 +1,41 @@
 #ujsag{
-    float: center;
-    width: 100vw;
+    float: right;
     margin: auto;
 }
 
 .lapok {
-    margin: auto;
+    background: no-repeat;
     background-size: 100%;
 }
 .fedo {
     margin: auto;
     background: no-repeat;
     background-size: 100%;
+    float: center;
 }
+#sideMenu{
+    height: 100vh;
+    width: 15%;
+    background-color: brown;
+    float: left;
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 5%;
+}
+
+#relative-layer {
+    position: relative;
+}
+#overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(30, 9, 9, 0.264);
+    position: fixed;
+}
+
+
 
 .loader {
     position: fixed;
