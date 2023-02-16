@@ -105,6 +105,7 @@ function SizePages() {
             })
         }
     }
+    console.log("sized")
 }
 
 function SideMenuToggle() {
@@ -140,16 +141,10 @@ function SideMenuToggle() {
 }
 
 function RotatedScreen(){
-    if (telon){
-        telon = false
-    }
-    else {
-        telon = true
-    }
+    DetermineDevice()
     SizePages()
     menuToggeled = true
     SideMenuToggle()
-    console.log("resized")
 }
 
 //MAIN
