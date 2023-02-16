@@ -32,12 +32,15 @@ document.addEventListener('touchend', e => {
 
 let sideMenu = document.getElementById("sideMenu")
 
-if (screen.width < screen.height) {
-    telon = true;
-    menuToggeled = true
-}
-else {
-    menuToggeled = false
+function DetermineDevice(){
+    if (screen.width < screen.height) {
+        telon = true;
+        menuToggeled = true
+    }
+    else {
+        menuToggeled = false
+    }
+    console.log(telon)
 }
 
 function CreatTheNewsPaper() {
@@ -136,7 +139,28 @@ function SideMenuToggle() {
     }
 }
 
+function RotatedScreen(){
+    if (telon){
+        telon = false
+    }
+    else {
+        telon = true
+    }
+    SizePages()
+    menuToggeled = true
+    SideMenuToggle()
+    console.log("resized")
+}
+
 //MAIN
+DetermineDevice()
+if (telon) {
+    menuToggeled = true
+}
+else {
+    menuToggeled = false
+}
+
 CreatTheNewsPaper()
 SideMenuToggle()
 
