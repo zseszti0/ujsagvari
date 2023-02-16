@@ -5,19 +5,22 @@ let menuToggeled = true
 
 let touchstartX = 0
 let touchendX = 0
+let touchstartY = 0
+let touchendY = 0
     
 function checkDirection() {
-  if ((touchendX + 50) < touchstartX)
-  {
-    SideMenuToggle()
-  }
-  if (touchendX > (touchstartX + 50)){
-    SideMenuToggle()
-  }
+        if ((touchendX + 50) < touchstartX)
+        {
+            SideMenuToggle()
+        }
+        if (touchendX > (touchstartX + 50)){
+            SideMenuToggle()
+        }
 }
 
 document.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
+
 })
 
 document.addEventListener('touchend', e => {
